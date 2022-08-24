@@ -5,7 +5,7 @@
       <div class="pokemon">
         <img :src="`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`" alt="pokemon" class="poke-img">
         <div class="descricao-container">
-          <h2>Estatisicas</h2>
+          <h2>Estatisticas</h2>
           <p v-for="status in info.stats" :key="status.stat.name" class="descricao">{{status.stat.name}}<span>{{status.base_stat}}</span></p>
         </div>
         <router-link :to="{name:'PaginaInicial'}">
